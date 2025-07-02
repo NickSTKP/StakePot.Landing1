@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StakePot | Stake and Win Daily</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-pink-100 text-gray-800 font-sans">
+  <!-- Navbar -->
+  <header class="flex items-center justify-between p-6 max-w-7xl mx-auto">
+    <h1 class="text-2xl font-bold text-pink-600">🍀 StakePot</h1>
+    <nav class="space-x-4 hidden md:block">
+      <a href="#how-it-works" class="hover:underline text-pink-500">How It Works</a>
+      <a href="#faq" class="hover:underline text-pink-500">FAQ</a>
+      <a href="#docs" class="hover:underline text-pink-500">Docs</a>
+      <button class="bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded text-white font-bold">Connect Wallet 💼</button>
+      <button onclick="document.getElementById('staking-details').scrollIntoView({ behavior: 'smooth' })"
+              class="bg-pink-400 hover:bg-pink-500 px-4 py-2 rounded text-white font-bold">Start Staking 🚀</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-4 bg-gradient-to-br from-pink-200 to-pink-300">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-6 text-pink-700">Stake, Save and Win! 🎉</h2>
+    <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-8 text-pink-600">
+      Stake your Ava, Eth, StEth and join a daily crypto lottery, maybe become the next lucky ducky. 🦆
+    </p>
+    <button class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded text-lg">Stake and Play Now! ✨</button>
+
+    <!-- Live Stats -->
+    <div class="mt-12 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-10">
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <p class="text-sm text-gray-500">Today's Prize</p>
+        <p class="text-2xl font-bold text-pink-600">💰 2.47 ETH</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <p class="text-sm text-gray-500">Next Draw In</p>
+        <p class="text-2xl font-bold text-pink-600">⏳ 05h 21m</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="py-20 px-4 max-w-5xl mx-auto text-center">
+    <h3 class="text-3xl md:text-4xl font-bold mb-12 text-pink-700">So, how does this magic work? 🪄</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-2 text-pink-600">1. Connect your wallet 🔌</h4>
+        <p>Use MetaMask or your fav Web3 pal to hop in.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-2 text-pink-600">2. Stake some ETH 🤑</h4>
+        <p>Put your ETH to work — it's like feeding your lucky unicorn!</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-2 text-pink-600">3. Win daily 🏆</h4>
+        <p>Each day one hero takes the prize. Will it be you, o chosen one?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start Staking Section -->
+  <section id="staking-details" class="py-20 px-4 max-w-xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-10 text-pink-700">🎯 Your Staking Dashboard</h3>
+    <div class="bg-white rounded-xl shadow-md p-6 space-y-4">
+      <div class="text-lg font-semibold text-pink-600">Your Stake: <span class="text-gray-800">0.00 ETH</span></div>
+      <div class="text-lg font-semibold text-pink-600">Your Tickets: <span class="text-gray-800">0</span></div>
+      <div class="text-lg font-semibold text-pink-600">Total Prize: <span class="text-gray-800">0.00 ETH</span></div>
+      <div class="text-lg font-semibold text-pink-600">Total Stake in Pot: <span class="text-gray-800">0.00 ETH</span></div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="text-center py-20 bg-pink-200">
+    <h3 class="text-2xl font-bold mb-4 text-pink-700">Don't just stake... StakePlay! 🎰</h3>
+    <p class="mb-6 text-pink-600">Connect your wallet and jump into the daily fun. Your ETH wants an adventure!</p>
+    <button class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-6 rounded text-lg">Connect Wallet 💖</button>
+    <p class="mt-6 text-pink-500">🎉 Yesterday’s Winner: 0x14c...2aF8 won 2.03 ETH! Woohoo!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-pink-600 py-10">
+    <div class="space-x-4">
+      <a href="#" class="hover:underline">Terms</a>
+      <a href="#" class="hover:underline">Privacy</a>
+      <a href="#" class="hover:underline">Docs</a>
+      <a href="#" class="hover:underline">Twitter</a>
+      <a href="#" class="hover:underline">Discord</a>
+    </div>
+    <p class="mt-4">© 2025 StakePot. Built with 💕 and a sprinkle of luck.</p>
+  </footer>
+</body>
+</html>
